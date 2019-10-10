@@ -542,7 +542,7 @@ public class SpringScrollView extends ReactViewGroup implements View.OnTouchList
         verticalAnimation = new DecelerateAnimation(contentOffset.y, contentSize.height - size.height, 500) {
             @Override
             protected void onUpdate(float value) {
-                setContentOffset(contentOffset.x, value);
+                // setContentOffset(contentOffset.x, value);
             }
         };
         verticalAnimation.start();
